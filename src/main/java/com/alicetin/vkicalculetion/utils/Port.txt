@@ -1,0 +1,4 @@
+Backend Project Url: http://localhost:3737/
+Frontend Project Url: http://localhost:3000/
+Database Url       : http://localhost:3737/h2-console
+Swagger Ui         : http://localhost:3737/swagger-ui/index.html
