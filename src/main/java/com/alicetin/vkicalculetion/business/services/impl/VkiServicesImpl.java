@@ -1,6 +1,7 @@
 package com.alicetin.vkicalculetion.business.services.impl;
 
 
+import com.alicetin.vkicalculetion.bean.ModelMapperBeanClass;
 import com.alicetin.vkicalculetion.business.dto.RefarenceVkiDto;
 import com.alicetin.vkicalculetion.business.dto.UserVkiDto;
 import com.alicetin.vkicalculetion.business.services.IVkiServices;
@@ -8,6 +9,7 @@ import com.alicetin.vkicalculetion.data.entity.ReferenceVkiEntity;
 import com.alicetin.vkicalculetion.data.entity.UserVkiEntity;
 import com.alicetin.vkicalculetion.data.repository.IReferanceVkiRepository;
 import com.alicetin.vkicalculetion.data.repository.IVkiRepository;
+import com.alicetin.vkicalculetion.exception.Resource404NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
