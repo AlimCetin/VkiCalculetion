@@ -1,6 +1,6 @@
 package com.alicetin.vkicalculetion.data.entity;
 
-import com.hamitmizrak.tech_3_springreact.data.BaseEntity;
+import com.alicetin.vkicalculetion.data.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
