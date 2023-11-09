@@ -15,6 +15,6 @@ import java.util.Optional;
 
 public interface IVkiRepository extends CrudRepository<UserVkiEntity,Long> {
      //Burada da özel durumlar yazılabilir.
-     Optional<UserVkiEntity> findByRegistername(String name);
+     Iterable<UserVkiEntity> findByuName(String u_name);
 
 } //End Interface

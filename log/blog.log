@@ -1,0 +1,24 @@
+2023-11-09T00:27:15.711+03:00  INFO 10068 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Starting VkiCalculetionApplication using Java 19 with PID 10068 (C:\Users\Dell\Desktop\kurs\proje\Spring\VkiCalculetion\target\classes started by Dell in C:\Users\Dell\Desktop\kurs\proje\Spring\VkiCalculetion)
+2023-11-09T00:27:15.744+03:00  INFO 10068 --- [restartedMain] c.a.v.VkiCalculetionApplication          : The following 1 profile is active: "frontend"
+2023-11-09T00:27:15.950+03:00  INFO 10068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-09T00:27:18.473+03:00  INFO 10068 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-09T00:27:18.590+03:00  INFO 10068 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 2 JPA repository interfaces.
+2023-11-09T00:27:20.548+03:00  INFO 10068 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-09T00:27:20.580+03:00  INFO 10068 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-09T00:27:21.028+03:00  INFO 10068 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/blog user=SA
+2023-11-09T00:27:21.031+03:00  INFO 10068 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-09T00:27:24.237+03:00  INFO 10068 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T00:27:24.336+03:00  INFO 10068 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner After Bean Method başladı
+2023-11-09T00:27:24.342+03:00  INFO 10068 --- [restartedMain] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder Before Bean başladı
+2023-11-09T00:27:24.344+03:00  INFO 10068 --- [restartedMain] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api Before Bean başladı
+2023-11-09T00:27:27.489+03:00  WARN 10068 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-11-09T00:27:27.827+03:00  INFO 10068 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-09T00:27:28.160+03:00  INFO 10068 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Started VkiCalculetionApplication in 13.686 seconds (process running for 18.546)
+2023-11-09T00:27:28.165+03:00  INFO 10068 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner2        : CommandLineRunner Çalıştı Sade
+2023-11-09T00:27:28.166+03:00  INFO 10068 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : CommandLineRunner Çalıştı
+2023-11-09T00:27:28.846+03:00  INFO 10068 --- [SpringApplicationShutdownHook] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api After Bean bitti
+2023-11-09T00:27:28.847+03:00  INFO 10068 --- [SpringApplicationShutdownHook] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder After Bean bitti
+2023-11-09T00:27:28.848+03:00  INFO 10068 --- [SpringApplicationShutdownHook] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner Before Bean Method bitti
+2023-11-09T00:27:28.849+03:00  INFO 10068 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T00:27:28.908+03:00  INFO 10068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-09T00:27:28.916+03:00  INFO 10068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

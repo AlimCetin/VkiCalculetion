@@ -63,8 +63,8 @@ public class VkiApiImpl implements IVkiApi<UserVkiDto, RefarenceVkiDto> {
     //FIND BY NAME
     @Override
     @GetMapping("/search")
-    public ResponseEntity<?> vkiServiceFindByName(@RequestParam String name) {
-            return ResponseEntity.ok(iVkiServices.vkiServiceFindByName(name));
+    public ResponseEntity<List<UserVkiDto>> vkiServiceFindByName(@RequestParam String uName) {
+            return ResponseEntity.ok(iVkiServices.vkiServiceFindByName(uName));
     }
     //CREATE
     @Override
@@ -84,7 +84,7 @@ public class VkiApiImpl implements IVkiApi<UserVkiDto, RefarenceVkiDto> {
     //UPDATE
     @Override
     @PutMapping(value = "/update/{id}")
-    public ResponseEntity<?> vkiServiceUpdate(@PathVariable(name="id")Long id,@Valid @RequestBody UserVkiDto userVkiDto) {
+    public ResponseEntity<?> vkiServiceUpdate(@PathVariable(name="id")Long id, @RequestBody UserVkiDto userVkiDto) {
             return ResponseEntity.status(HttpStatus.OK).body(iVkiServices.vkiServiceUpdate(id,userVkiDto));
         }
 

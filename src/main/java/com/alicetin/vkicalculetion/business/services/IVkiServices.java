@@ -31,7 +31,7 @@ public interface IVkiServices<D,E,F,G>{
     //FIND ID
     public D vkiServiceFindById(Long id);
     // FIND SURNAME
-    public D vkiServiceFindByName(String name);
+    public List<D> vkiServiceFindByName(String uName);
 
     ////////////////////////////////////////////////////////////
     //  REGISTER C R U D

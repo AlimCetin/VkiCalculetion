@@ -14,10 +14,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.Random;
+import java.util.*;
 
 // LOMBOK
 @RequiredArgsConstructor
@@ -86,18 +83,21 @@ public class VkiServicesImpl implements IVkiServices<UserVkiDto, UserVkiEntity, 
     @Override
     public UserVkiDto vkiServiceFindById(Long id) {
         Optional<UserVkiEntity> findUserVkiEntity=iVkiRepository.findById(id);
-        findUserVkiEntity.orElseThrow(()->new Resource404NotFoundException(id+ " nolu id yoktur"));
+        findUserVkiEntity.orElseThrow(()->new Resource404NotFoundException(id+ " nolu ID yoktur"));
         UserVkiDto userVkiDto=entityToDto(findUserVkiEntity.get());
             return userVkiDto;
 
     }
     //FindByName
     @Override
-    public UserVkiDto vkiServiceFindByName(String name) {
-        Optional<UserVkiEntity> FindBySurnameEntity = iVkiRepository.findByRegistername(name);
-        FindBySurnameEntity.orElseThrow(()->new Resource404NotFoundException(name+ " nolu id yoktur"));
-        UserVkiDto userVkiDto = entityToDto(FindBySurnameEntity.get());
-            return userVkiDto;
+    public List<UserVkiDto> vkiServiceFindByName(String u_name) {
+        Iterable<UserVkiEntity> registerEntityIterable = iVkiRepository.findByuName(u_name);
+        List<UserVkiDto> registerDtoList=new ArrayList<>();
+        for(UserVkiEntity entity: registerEntityIterable ){
+            // Entity Listesini ==> Dto Listesine çeviriyor / list e ekliyor.
+            registerDtoList.add(entityToDto(entity));
+        }
+        return registerDtoList;
     }
     //Create
     @Transactional
@@ -109,6 +109,9 @@ public class VkiServicesImpl implements IVkiServices<UserVkiDto, UserVkiEntity, 
                 iVkiRepository.save(userVkiEntity);
                 userVkiDto.setId(userVkiEntity.getId());
                 userVkiDto.setSystemDate(userVkiEntity.getSystemDate());
+                userVkiDto.setUName(userVkiEntity.getUName());
+                userVkiDto.setUKilo(userVkiEntity.getUKilo());
+                userVkiDto.setUHeight(userVkiEntity.getUHeight());
             }
             return userVkiDto;
     }
@@ -132,12 +135,12 @@ public class VkiServicesImpl implements IVkiServices<UserVkiDto, UserVkiEntity, 
         //Entity Instance
         UserVkiEntity userVkiEntity = null;
         if(registerFindDto!=null){
-            userVkiEntity=dtoToEntity(userVkiDto);
+            userVkiEntity=dtoToEntity(registerFindDto);
             // Set etmek için boş bir Dto nun Entitysi oluşturduk.
-            userVkiEntity.setId(userVkiDto.getId());
             userVkiEntity.setUName(userVkiDto.getUName());
             userVkiEntity.setUKilo(userVkiDto.getUKilo());
             userVkiEntity.setUHeight(userVkiDto.getUHeight());
+            userVkiEntity.setSystemDate(new Date());
             iVkiRepository.save(userVkiEntity);
         }
         return entityToDto(userVkiEntity);

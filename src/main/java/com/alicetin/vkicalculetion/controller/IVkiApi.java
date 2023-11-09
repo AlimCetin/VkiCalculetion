@@ -18,7 +18,7 @@ public interface IVkiApi<D,F> {
     public ResponseEntity<?> vkiServiceFindById(Long id);
 
     // FIND SURNAME
-    public ResponseEntity<?> vkiServiceFindByName(String name);
+    public ResponseEntity<List<D>> vkiServiceFindByName(String uName);
 
     // CREATE
     public ResponseEntity<?> vkiServiceCreate(D d);
