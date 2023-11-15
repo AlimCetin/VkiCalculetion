@@ -1,24 +1,413 @@
-2023-11-09T00:27:15.711+03:00  INFO 10068 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Starting VkiCalculetionApplication using Java 19 with PID 10068 (C:\Users\Dell\Desktop\kurs\proje\Spring\VkiCalculetion\target\classes started by Dell in C:\Users\Dell\Desktop\kurs\proje\Spring\VkiCalculetion)
-2023-11-09T00:27:15.744+03:00  INFO 10068 --- [restartedMain] c.a.v.VkiCalculetionApplication          : The following 1 profile is active: "frontend"
-2023-11-09T00:27:15.950+03:00  INFO 10068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-11-09T00:27:18.473+03:00  INFO 10068 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-09T00:27:18.590+03:00  INFO 10068 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 2 JPA repository interfaces.
-2023-11-09T00:27:20.548+03:00  INFO 10068 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-11-09T00:27:20.580+03:00  INFO 10068 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-11-09T00:27:21.028+03:00  INFO 10068 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/blog user=SA
-2023-11-09T00:27:21.031+03:00  INFO 10068 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-11-09T00:27:24.237+03:00  INFO 10068 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-11-09T00:27:24.336+03:00  INFO 10068 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner After Bean Method başladı
-2023-11-09T00:27:24.342+03:00  INFO 10068 --- [restartedMain] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder Before Bean başladı
-2023-11-09T00:27:24.344+03:00  INFO 10068 --- [restartedMain] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api Before Bean başladı
-2023-11-09T00:27:27.489+03:00  WARN 10068 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2023-11-09T00:27:27.827+03:00  INFO 10068 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-11-09T00:27:28.160+03:00  INFO 10068 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Started VkiCalculetionApplication in 13.686 seconds (process running for 18.546)
-2023-11-09T00:27:28.165+03:00  INFO 10068 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner2        : CommandLineRunner Çalıştı Sade
-2023-11-09T00:27:28.166+03:00  INFO 10068 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : CommandLineRunner Çalıştı
-2023-11-09T00:27:28.846+03:00  INFO 10068 --- [SpringApplicationShutdownHook] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api After Bean bitti
-2023-11-09T00:27:28.847+03:00  INFO 10068 --- [SpringApplicationShutdownHook] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder After Bean bitti
-2023-11-09T00:27:28.848+03:00  INFO 10068 --- [SpringApplicationShutdownHook] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner Before Bean Method bitti
-2023-11-09T00:27:28.849+03:00  INFO 10068 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-11-09T00:27:28.908+03:00  INFO 10068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-11-09T00:27:28.916+03:00  INFO 10068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-09T13:13:21.034+03:00  INFO 1576 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Starting VkiCalculetionApplication using Java 19 with PID 1576 (C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion1 - Kopya\BackEnd\target\classes started by Dell in C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion1 - Kopya)
+2023-11-09T13:13:21.043+03:00  INFO 1576 --- [restartedMain] c.a.v.VkiCalculetionApplication          : The following 1 profile is active: "frontend"
+2023-11-09T13:13:21.407+03:00  INFO 1576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-09T13:13:21.409+03:00  INFO 1576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-09T13:13:24.509+03:00  INFO 1576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-09T13:13:24.642+03:00  INFO 1576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 2 JPA repository interfaces.
+2023-11-09T13:13:25.866+03:00  INFO 1576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3737 (http)
+2023-11-09T13:13:25.880+03:00  INFO 1576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-09T13:13:25.881+03:00  INFO 1576 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-09T13:13:25.986+03:00  INFO 1576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-09T13:13:25.986+03:00  INFO 1576 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4574 ms
+2023-11-09T13:13:26.173+03:00  INFO 1576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-09T13:13:27.066+03:00  INFO 1576 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/blog user=SA
+2023-11-09T13:13:27.070+03:00  INFO 1576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-09T13:13:27.085+03:00  INFO 1576 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2023-11-09T13:13:27.205+03:00 DEBUG 1576 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-11-09T13:13:27.206+03:00 DEBUG 1576 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-11-09T13:13:28.084+03:00  INFO 1576 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-09T13:13:31.101+03:00  INFO 1576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T13:13:31.123+03:00  INFO 1576 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner After Bean Method başladı
+2023-11-09T13:13:31.127+03:00  INFO 1576 --- [restartedMain] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder Before Bean başladı
+2023-11-09T13:13:31.129+03:00  INFO 1576 --- [restartedMain] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api Before Bean başladı
+2023-11-09T13:13:31.977+03:00  WARN 1576 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-09T13:13:32.172+03:00 DEBUG 1576 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-09T13:13:32.334+03:00 DEBUG 1576 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2023-11-09T13:13:33.996+03:00 DEBUG 1576 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-11-09T13:13:34.019+03:00 DEBUG 1576 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-09T13:13:34.102+03:00  WARN 1576 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-11-09T13:13:35.314+03:00  INFO 1576 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-11-09T13:13:35.340+03:00  INFO 1576 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e320eff, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21ffb16f, org.springframework.security.web.context.SecurityContextHolderFilter@d76ac9b, org.springframework.security.web.header.HeaderWriterFilter@3a4fb041, org.springframework.web.filter.CorsFilter@2c2d82d4, org.springframework.security.web.csrf.CsrfFilter@442fa780, org.springframework.security.web.authentication.logout.LogoutFilter@58e4adb1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1ead4a5c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6d06c4d4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5abdb8d0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@630580e6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@477ed8e2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ff63b32, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2406108e, org.springframework.security.web.access.ExceptionTranslationFilter@5fa5a8a3, org.springframework.security.web.access.intercept.AuthorizationFilter@16750694]
+2023-11-09T13:13:35.588+03:00  INFO 1576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-09T13:13:35.925+03:00  INFO 1576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3737 (http) with context path ''
+2023-11-09T13:13:35.952+03:00  INFO 1576 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Started VkiCalculetionApplication in 16.986 seconds (process running for 22.073)
+2023-11-09T13:13:35.964+03:00  INFO 1576 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner2        : CommandLineRunner Çalıştı Sade
+2023-11-09T13:13:35.964+03:00  INFO 1576 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : CommandLineRunner Çalıştı
+2023-11-09T13:14:43.430+03:00  INFO 1576 --- [SpringApplicationShutdownHook] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api After Bean bitti
+2023-11-09T13:14:43.443+03:00  INFO 1576 --- [SpringApplicationShutdownHook] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder After Bean bitti
+2023-11-09T13:14:43.444+03:00  INFO 1576 --- [SpringApplicationShutdownHook] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner Before Bean Method bitti
+2023-11-09T13:14:43.448+03:00  INFO 1576 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T13:14:43.611+03:00  INFO 1576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-09T13:14:43.646+03:00  INFO 1576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-09T13:24:39.386+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Starting VkiCalculetionApplication using Java 19 with PID 11180 (C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion\BackEnd\target\classes started by Dell in C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion)
+2023-11-09T13:24:39.390+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : The following 1 profile is active: "frontend"
+2023-11-09T13:24:39.513+03:00  INFO 11180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-09T13:24:39.514+03:00  INFO 11180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-09T13:24:43.025+03:00  INFO 11180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-09T13:24:43.172+03:00  INFO 11180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 2 JPA repository interfaces.
+2023-11-09T13:24:44.884+03:00  INFO 11180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3737 (http)
+2023-11-09T13:24:44.907+03:00  INFO 11180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-09T13:24:44.909+03:00  INFO 11180 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-09T13:24:45.104+03:00  INFO 11180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-09T13:24:45.106+03:00  INFO 11180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5590 ms
+2023-11-09T13:24:45.425+03:00  INFO 11180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-09T13:24:45.963+03:00  INFO 11180 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/blog user=SA
+2023-11-09T13:24:45.970+03:00  INFO 11180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-09T13:24:46.005+03:00  INFO 11180 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2023-11-09T13:24:46.213+03:00 DEBUG 11180 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-11-09T13:24:46.214+03:00 DEBUG 11180 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-11-09T13:24:48.637+03:00  INFO 11180 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-09T13:24:50.702+03:00  INFO 11180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T13:24:50.719+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner After Bean Method başladı
+2023-11-09T13:24:50.722+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder Before Bean başladı
+2023-11-09T13:24:50.723+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api Before Bean başladı
+2023-11-09T13:24:51.736+03:00  WARN 11180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-09T13:24:51.960+03:00 DEBUG 11180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-09T13:24:52.106+03:00 DEBUG 11180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2023-11-09T13:24:53.676+03:00 DEBUG 11180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-11-09T13:24:53.702+03:00 DEBUG 11180 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-09T13:24:53.801+03:00  WARN 11180 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-11-09T13:24:54.687+03:00  INFO 11180 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-11-09T13:24:54.718+03:00  INFO 11180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1778c49a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55343090, org.springframework.security.web.context.SecurityContextHolderFilter@6c9c843e, org.springframework.security.web.header.HeaderWriterFilter@51bc0f36, org.springframework.web.filter.CorsFilter@56557514, org.springframework.security.web.csrf.CsrfFilter@2fad7c04, org.springframework.security.web.authentication.logout.LogoutFilter@5f1b89be, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@46cff46a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1ea77736, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3b1a4cfa, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@360e800d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6508f76e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59df9ccd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a170317, org.springframework.security.web.access.ExceptionTranslationFilter@210787f0, org.springframework.security.web.access.intercept.AuthorizationFilter@16e433ce]
+2023-11-09T13:24:54.854+03:00  INFO 11180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-09T13:24:55.037+03:00  INFO 11180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3737 (http) with context path ''
+2023-11-09T13:24:55.078+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Started VkiCalculetionApplication in 16.77 seconds (process running for 27.863)
+2023-11-09T13:24:55.094+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner2        : CommandLineRunner Çalıştı Sade
+2023-11-09T13:24:55.094+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : CommandLineRunner Çalıştı
+2023-11-09T13:26:27.725+03:00  INFO 11180 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-09T13:26:27.988+03:00  INFO 11180 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-09T13:26:28.427+03:00  INFO 11180 --- [Thread-6] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api After Bean bitti
+2023-11-09T13:26:28.432+03:00  INFO 11180 --- [Thread-6] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder After Bean bitti
+2023-11-09T13:26:28.434+03:00  INFO 11180 --- [Thread-6] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner Before Bean Method bitti
+2023-11-09T13:26:28.440+03:00  INFO 11180 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T13:26:29.381+03:00  INFO 11180 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-09T13:26:29.452+03:00  INFO 11180 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-09T13:26:30.485+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Starting VkiCalculetionApplication using Java 19 with PID 11180 (C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion\BackEnd\target\classes started by Dell in C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion)
+2023-11-09T13:26:30.487+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : The following 1 profile is active: "frontend"
+2023-11-09T13:26:32.124+03:00  INFO 11180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-09T13:26:32.158+03:00  INFO 11180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+2023-11-09T13:26:32.410+03:00  INFO 11180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3737 (http)
+2023-11-09T13:26:32.412+03:00  INFO 11180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-09T13:26:32.412+03:00  INFO 11180 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-09T13:26:32.470+03:00  INFO 11180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-09T13:26:32.470+03:00  INFO 11180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1971 ms
+2023-11-09T13:26:32.534+03:00  INFO 11180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-11-09T13:26:32.564+03:00  INFO 11180 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:file:./memory_persist/blog user=SA
+2023-11-09T13:26:32.564+03:00  INFO 11180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-11-09T13:26:32.565+03:00  INFO 11180 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2023-11-09T13:26:32.629+03:00 DEBUG 11180 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-11-09T13:26:32.630+03:00 DEBUG 11180 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-11-09T13:26:32.699+03:00  INFO 11180 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-09T13:26:32.901+03:00  INFO 11180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T13:26:32.915+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner After Bean Method başladı
+2023-11-09T13:26:32.919+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder Before Bean başladı
+2023-11-09T13:26:32.920+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api Before Bean başladı
+2023-11-09T13:26:33.508+03:00  WARN 11180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-09T13:26:33.609+03:00 DEBUG 11180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-09T13:26:33.650+03:00 DEBUG 11180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2023-11-09T13:26:34.608+03:00 DEBUG 11180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-11-09T13:26:34.620+03:00 DEBUG 11180 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-09T13:26:34.633+03:00  WARN 11180 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-11-09T13:26:34.982+03:00  INFO 11180 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-11-09T13:26:35.007+03:00  INFO 11180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a1df863, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29804fa6, org.springframework.security.web.context.SecurityContextHolderFilter@55d9153f, org.springframework.security.web.header.HeaderWriterFilter@38cd1e53, org.springframework.web.filter.CorsFilter@4a0b56ec, org.springframework.security.web.csrf.CsrfFilter@23fba4cc, org.springframework.security.web.authentication.logout.LogoutFilter@4bdbd784, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7cc848e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2d83f101, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@325f3b9e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4af907b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2bfa068c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d6c4779, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17240356, org.springframework.security.web.access.ExceptionTranslationFilter@7164e49e, org.springframework.security.web.access.intercept.AuthorizationFilter@303ea26e]
+2023-11-09T13:26:35.064+03:00  INFO 11180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-09T13:26:35.123+03:00  INFO 11180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3737 (http) with context path ''
+2023-11-09T13:26:35.145+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Started VkiCalculetionApplication in 5.163 seconds (process running for 127.93)
+2023-11-09T13:26:35.149+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner2        : CommandLineRunner Çalıştı Sade
+2023-11-09T13:26:35.150+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : CommandLineRunner Çalıştı
+2023-11-09T13:26:35.250+03:00  INFO 11180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-11-09T13:26:35.535+03:00 DEBUG 11180 --- [http-nio-3737-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:26:35.764+03:00  WARN 11180 --- [http-nio-3737-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [183] milliseconds.
+2023-11-09T13:26:35.799+03:00  INFO 11180 --- [http-nio-3737-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-09T13:26:35.799+03:00  INFO 11180 --- [http-nio-3737-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-09T13:26:35.800+03:00 DEBUG 11180 --- [http-nio-3737-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-11-09T13:26:35.800+03:00 DEBUG 11180 --- [http-nio-3737-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-11-09T13:26:35.800+03:00 DEBUG 11180 --- [http-nio-3737-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-11-09T13:26:35.803+03:00 DEBUG 11180 --- [http-nio-3737-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7cb1ed11
+2023-11-09T13:26:35.804+03:00 DEBUG 11180 --- [http-nio-3737-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@30793201
+2023-11-09T13:26:35.807+03:00 DEBUG 11180 --- [http-nio-3737-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-09T13:26:35.808+03:00  INFO 11180 --- [http-nio-3737-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2023-11-09T13:26:35.819+03:00 DEBUG 11180 --- [http-nio-3737-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:26:36.559+03:00 DEBUG 11180 --- [http-nio-3737-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:26:36.571+03:00 DEBUG 11180 --- [http-nio-3737-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:26:51.543+03:00 DEBUG 11180 --- [http-nio-3737-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:26:51.681+03:00  WARN 11180 --- [http-nio-3737-exec-9] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2023-11-09T13:26:51.693+03:00 DEBUG 11180 --- [http-nio-3737-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:26:51.783+03:00 DEBUG 11180 --- [http-nio-3737-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:26:51.794+03:00 DEBUG 11180 --- [http-nio-3737-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:27:06.270+03:00 DEBUG 11180 --- [http-nio-3737-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:27:06.398+03:00 DEBUG 11180 --- [http-nio-3737-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:27:06.470+03:00 DEBUG 11180 --- [http-nio-3737-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:27:06.493+03:00 DEBUG 11180 --- [http-nio-3737-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:27:12.778+03:00 DEBUG 11180 --- [http-nio-3737-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:27:12.793+03:00 DEBUG 11180 --- [http-nio-3737-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:27:12.864+03:00 DEBUG 11180 --- [http-nio-3737-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:27:12.873+03:00 DEBUG 11180 --- [http-nio-3737-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:27:19.742+03:00 DEBUG 11180 --- [http-nio-3737-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:27:19.744+03:00  WARN 11180 --- [http-nio-3737-exec-6] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2023-11-09T13:27:19.753+03:00 DEBUG 11180 --- [http-nio-3737-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:27:19.829+03:00 DEBUG 11180 --- [http-nio-3737-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:27:19.839+03:00 DEBUG 11180 --- [http-nio-3737-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:28:54.701+03:00 DEBUG 11180 --- [http-nio-3737-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:28:54.822+03:00 DEBUG 11180 --- [http-nio-3737-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:28:54.837+03:00 DEBUG 11180 --- [http-nio-3737-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:29:02.195+03:00 DEBUG 11180 --- [http-nio-3737-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:29:02.202+03:00  WARN 11180 --- [http-nio-3737-exec-5] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2023-11-09T13:29:02.220+03:00 DEBUG 11180 --- [http-nio-3737-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:29:02.296+03:00 DEBUG 11180 --- [http-nio-3737-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:29:02.310+03:00 DEBUG 11180 --- [http-nio-3737-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:29:13.387+03:00 DEBUG 11180 --- [http-nio-3737-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:29:13.461+03:00 DEBUG 11180 --- [http-nio-3737-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:29:13.475+03:00 DEBUG 11180 --- [http-nio-3737-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:29:21.057+03:00 DEBUG 11180 --- [http-nio-3737-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:29:21.182+03:00 DEBUG 11180 --- [http-nio-3737-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:29:21.247+03:00 DEBUG 11180 --- [http-nio-3737-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:29:21.259+03:00 DEBUG 11180 --- [http-nio-3737-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:31:04.649+03:00  INFO 11180 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-11-09T13:31:04.931+03:00  INFO 11180 --- [Thread-8] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-09T13:31:04.970+03:00  INFO 11180 --- [Thread-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-09T13:31:05.631+03:00  INFO 11180 --- [Thread-8] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api After Bean bitti
+2023-11-09T13:31:05.636+03:00  INFO 11180 --- [Thread-8] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder After Bean bitti
+2023-11-09T13:31:05.642+03:00  INFO 11180 --- [Thread-8] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner Before Bean Method bitti
+2023-11-09T13:31:05.648+03:00  INFO 11180 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T13:31:05.747+03:00  INFO 11180 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-11-09T13:31:06.026+03:00  INFO 11180 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-11-09T13:31:06.852+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Starting VkiCalculetionApplication using Java 19 with PID 11180 (C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion\BackEnd\target\classes started by Dell in C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion)
+2023-11-09T13:31:06.853+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : The following 1 profile is active: "frontend"
+2023-11-09T13:31:09.652+03:00  INFO 11180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-09T13:31:09.871+03:00  INFO 11180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 216 ms. Found 2 JPA repository interfaces.
+2023-11-09T13:31:11.760+03:00  INFO 11180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3737 (http)
+2023-11-09T13:31:11.762+03:00  INFO 11180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-09T13:31:11.763+03:00  INFO 11180 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-09T13:31:11.850+03:00  INFO 11180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-09T13:31:11.850+03:00  INFO 11180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4992 ms
+2023-11-09T13:31:12.028+03:00  INFO 11180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-11-09T13:31:12.124+03:00  INFO 11180 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:file:./memory_persist/blog user=SA
+2023-11-09T13:31:12.125+03:00  INFO 11180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-11-09T13:31:12.125+03:00  INFO 11180 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2023-11-09T13:31:12.292+03:00 DEBUG 11180 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-11-09T13:31:12.292+03:00 DEBUG 11180 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-11-09T13:31:12.446+03:00  INFO 11180 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-09T13:31:13.820+03:00  INFO 11180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T13:31:13.853+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner After Bean Method başladı
+2023-11-09T13:31:13.857+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder Before Bean başladı
+2023-11-09T13:31:13.858+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api Before Bean başladı
+2023-11-09T13:31:14.297+03:00  WARN 11180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-09T13:31:14.458+03:00 DEBUG 11180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-09T13:31:14.574+03:00 DEBUG 11180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2023-11-09T13:31:17.022+03:00 DEBUG 11180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-11-09T13:31:17.181+03:00 DEBUG 11180 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-09T13:31:17.272+03:00  WARN 11180 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-11-09T13:31:18.276+03:00  INFO 11180 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-11-09T13:31:18.320+03:00  INFO 11180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4bfe9a50, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f10ad73, org.springframework.security.web.context.SecurityContextHolderFilter@5cff1df1, org.springframework.security.web.header.HeaderWriterFilter@80b1f53, org.springframework.web.filter.CorsFilter@3e320fd8, org.springframework.security.web.csrf.CsrfFilter@4249546a, org.springframework.security.web.authentication.logout.LogoutFilter@55396bbd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a556edf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4a6bdfb7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@67f53480, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@270fd22c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@549de800, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1acaba3a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58661e34, org.springframework.security.web.access.ExceptionTranslationFilter@5a928168, org.springframework.security.web.access.intercept.AuthorizationFilter@442e75e]
+2023-11-09T13:31:18.427+03:00  INFO 11180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-09T13:31:18.591+03:00  INFO 11180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3737 (http) with context path ''
+2023-11-09T13:31:18.630+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Started VkiCalculetionApplication in 11.923 seconds (process running for 411.416)
+2023-11-09T13:31:18.647+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner2        : CommandLineRunner Çalıştı Sade
+2023-11-09T13:31:18.647+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : CommandLineRunner Çalıştı
+2023-11-09T13:31:18.769+03:00  INFO 11180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-11-09T13:31:19.920+03:00  INFO 11180 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-11-09T13:31:19.978+03:00  INFO 11180 --- [Thread-12] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-09T13:31:20.107+03:00  INFO 11180 --- [Thread-12] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api After Bean bitti
+2023-11-09T13:31:20.107+03:00  INFO 11180 --- [Thread-12] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder After Bean bitti
+2023-11-09T13:31:20.108+03:00  INFO 11180 --- [Thread-12] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner Before Bean Method bitti
+2023-11-09T13:31:20.108+03:00  INFO 11180 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T13:31:20.137+03:00  INFO 11180 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-11-09T13:31:20.156+03:00  INFO 11180 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-11-09T13:31:20.749+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Starting VkiCalculetionApplication using Java 19 with PID 11180 (C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion\BackEnd\target\classes started by Dell in C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion)
+2023-11-09T13:31:20.751+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : The following 1 profile is active: "frontend"
+2023-11-09T13:31:28.409+03:00  INFO 11180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-09T13:31:31.009+03:00  INFO 11180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2596 ms. Found 2 JPA repository interfaces.
+2023-11-09T13:31:32.897+03:00  INFO 11180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3737 (http)
+2023-11-09T13:31:32.904+03:00  INFO 11180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-09T13:31:32.904+03:00  INFO 11180 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-09T13:31:33.015+03:00  INFO 11180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-09T13:31:33.015+03:00  INFO 11180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 12257 ms
+2023-11-09T13:31:33.153+03:00  INFO 11180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-11-09T13:31:33.245+03:00  INFO 11180 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:file:./memory_persist/blog user=SA
+2023-11-09T13:31:33.246+03:00  INFO 11180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-11-09T13:31:33.247+03:00  INFO 11180 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2023-11-09T13:31:33.390+03:00 DEBUG 11180 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-11-09T13:31:33.392+03:00 DEBUG 11180 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-11-09T13:31:33.583+03:00  INFO 11180 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-09T13:31:33.931+03:00  INFO 11180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T13:31:33.960+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner After Bean Method başladı
+2023-11-09T13:31:33.964+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder Before Bean başladı
+2023-11-09T13:31:33.969+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api Before Bean başladı
+2023-11-09T13:31:34.221+03:00  WARN 11180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-09T13:31:34.396+03:00 DEBUG 11180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-09T13:31:34.544+03:00 DEBUG 11180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2023-11-09T13:31:38.531+03:00 DEBUG 11180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-11-09T13:31:38.601+03:00 DEBUG 11180 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-09T13:31:38.708+03:00  WARN 11180 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-11-09T13:31:40.076+03:00  INFO 11180 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-11-09T13:31:40.100+03:00  INFO 11180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d6698a5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4dde8ab5, org.springframework.security.web.context.SecurityContextHolderFilter@4c7583d1, org.springframework.security.web.header.HeaderWriterFilter@126c8209, org.springframework.web.filter.CorsFilter@a7e37e8, org.springframework.security.web.csrf.CsrfFilter@2278e93, org.springframework.security.web.authentication.logout.LogoutFilter@35e08bd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@34be7b35, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@57870db3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@673c25f5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2f485cfe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7298dfda, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@218dbf41, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e263a07, org.springframework.security.web.access.ExceptionTranslationFilter@5a0128e0, org.springframework.security.web.access.intercept.AuthorizationFilter@20e0beea]
+2023-11-09T13:31:40.152+03:00  INFO 11180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-09T13:31:40.232+03:00  INFO 11180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3737 (http) with context path ''
+2023-11-09T13:31:40.250+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Started VkiCalculetionApplication in 19.637 seconds (process running for 433.035)
+2023-11-09T13:31:40.254+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner2        : CommandLineRunner Çalıştı Sade
+2023-11-09T13:31:40.254+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : CommandLineRunner Çalıştı
+2023-11-09T13:31:40.303+03:00  INFO 11180 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-11-09T13:32:01.648+03:00 DEBUG 11180 --- [http-nio-3737-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:32:01.714+03:00  INFO 11180 --- [http-nio-3737-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-09T13:32:01.715+03:00  INFO 11180 --- [http-nio-3737-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-09T13:32:01.715+03:00 DEBUG 11180 --- [http-nio-3737-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-11-09T13:32:01.715+03:00 DEBUG 11180 --- [http-nio-3737-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-11-09T13:32:01.715+03:00 DEBUG 11180 --- [http-nio-3737-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-11-09T13:32:01.717+03:00 DEBUG 11180 --- [http-nio-3737-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@26fb2c66
+2023-11-09T13:32:01.720+03:00 DEBUG 11180 --- [http-nio-3737-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@37dde0dd
+2023-11-09T13:32:01.720+03:00 DEBUG 11180 --- [http-nio-3737-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-09T13:32:01.721+03:00  INFO 11180 --- [http-nio-3737-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-11-09T13:32:01.722+03:00 DEBUG 11180 --- [http-nio-3737-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:32:02.397+03:00 DEBUG 11180 --- [http-nio-3737-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:32:02.410+03:00 DEBUG 11180 --- [http-nio-3737-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:33:00.783+03:00 DEBUG 11180 --- [http-nio-3737-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:33:01.590+03:00 DEBUG 11180 --- [http-nio-3737-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:33:01.825+03:00 DEBUG 11180 --- [http-nio-3737-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:33:01.908+03:00 DEBUG 11180 --- [http-nio-3737-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:33:46.381+03:00  INFO 11180 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-11-09T13:33:46.471+03:00  INFO 11180 --- [Thread-16] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-09T13:33:46.484+03:00  INFO 11180 --- [Thread-16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-09T13:33:46.757+03:00  INFO 11180 --- [Thread-16] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api After Bean bitti
+2023-11-09T13:33:46.762+03:00  INFO 11180 --- [Thread-16] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder After Bean bitti
+2023-11-09T13:33:46.767+03:00  INFO 11180 --- [Thread-16] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner Before Bean Method bitti
+2023-11-09T13:33:46.773+03:00  INFO 11180 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T13:33:46.946+03:00  INFO 11180 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-11-09T13:33:47.072+03:00  INFO 11180 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-11-09T13:33:49.937+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Starting VkiCalculetionApplication using Java 19 with PID 11180 (C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion\BackEnd\target\classes started by Dell in C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion)
+2023-11-09T13:33:49.938+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : The following 1 profile is active: "frontend"
+2023-11-09T13:33:51.496+03:00  INFO 11180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-09T13:33:51.607+03:00  INFO 11180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 2 JPA repository interfaces.
+2023-11-09T13:33:52.275+03:00 ERROR 11180 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.NullPointerException: Cannot read field "generatedClass" because "data" is null
+	at org.springframework.cglib.proxy.Enhancer.nextInstance(Enhancer.java:783) ~[spring-core-6.0.13.jar:6.0.13]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:321) ~[spring-core-6.0.13.jar:6.0.13]
+	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:562) ~[spring-core-6.0.13.jar:6.0.13]
+	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:407) ~[spring-core-6.0.13.jar:6.0.13]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:138) ~[spring-context-6.0.13.jar:6.0.13]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:109) ~[spring-context-6.0.13.jar:6.0.13]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:531) ~[spring-context-6.0.13.jar:6.0.13]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:308) ~[spring-context-6.0.13.jar:6.0.13]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:358) ~[spring-context-6.0.13.jar:6.0.13]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:150) ~[spring-context-6.0.13.jar:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:779) ~[spring-context-6.0.13.jar:6.0.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597) ~[spring-context-6.0.13.jar:6.0.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.5.jar:3.1.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) ~[spring-boot-3.1.5.jar:3.1.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) ~[spring-boot-3.1.5.jar:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-3.1.5.jar:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.5.jar:3.1.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.5.jar:3.1.5]
+	at com.alicetin.vkicalculetion.VkiCalculetionApplication.main(VkiCalculetionApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.5.jar:3.1.5]
+
+2023-11-09T13:33:59.012+03:00  INFO 11180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-09T13:33:59.012+03:00  INFO 11180 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-09T13:33:59.033+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Starting VkiCalculetionApplication using Java 19 with PID 11180 (C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion\BackEnd\target\classes started by Dell in C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion)
+2023-11-09T13:33:59.034+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : The following 1 profile is active: "frontend"
+2023-11-09T13:34:05.085+03:00  INFO 11180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-09T13:34:05.470+03:00  INFO 11180 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 323 ms. Found 2 JPA repository interfaces.
+2023-11-09T13:34:08.617+03:00  INFO 11180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3737 (http)
+2023-11-09T13:34:08.620+03:00  INFO 11180 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-09T13:34:08.620+03:00  INFO 11180 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-09T13:34:08.777+03:00  INFO 11180 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-09T13:34:08.777+03:00  INFO 11180 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9739 ms
+2023-11-09T13:34:09.333+03:00  INFO 11180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-11-09T13:34:10.261+03:00  INFO 11180 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn40: url=jdbc:h2:file:./memory_persist/blog user=SA
+2023-11-09T13:34:10.262+03:00  INFO 11180 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-11-09T13:34:10.267+03:00  INFO 11180 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2023-11-09T13:34:10.592+03:00 DEBUG 11180 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-11-09T13:34:10.593+03:00 DEBUG 11180 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-11-09T13:34:10.750+03:00  INFO 11180 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-09T13:34:11.382+03:00  INFO 11180 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T13:34:11.716+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner After Bean Method başladı
+2023-11-09T13:34:11.720+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder Before Bean başladı
+2023-11-09T13:34:11.725+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api Before Bean başladı
+2023-11-09T13:34:13.068+03:00  WARN 11180 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-09T13:34:13.634+03:00 DEBUG 11180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-09T13:34:14.176+03:00 DEBUG 11180 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2023-11-09T13:34:20.023+03:00 DEBUG 11180 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-11-09T13:34:20.621+03:00 DEBUG 11180 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-09T13:34:23.392+03:00  WARN 11180 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-11-09T13:34:39.601+03:00  INFO 11180 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-11-09T13:34:40.667+03:00  INFO 11180 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4d264319, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@fa1cc3c, org.springframework.security.web.context.SecurityContextHolderFilter@48189198, org.springframework.security.web.header.HeaderWriterFilter@6ca203c4, org.springframework.web.filter.CorsFilter@e44dd29, org.springframework.security.web.csrf.CsrfFilter@4e15f7b4, org.springframework.security.web.authentication.logout.LogoutFilter@7ef30f0c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2784cc05, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@50a39699, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2f2981a4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@34c2a1c4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29d16778, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ce31ce2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@506831d3, org.springframework.security.web.access.ExceptionTranslationFilter@61bc8169, org.springframework.security.web.access.intercept.AuthorizationFilter@6602b423]
+2023-11-09T13:34:42.547+03:00  INFO 11180 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-09T13:34:43.544+03:00  INFO 11180 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3737 (http) with context path ''
+2023-11-09T13:34:43.639+03:00  INFO 11180 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Started VkiCalculetionApplication in 44.673 seconds (process running for 616.425)
+2023-11-09T13:34:43.690+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner2        : CommandLineRunner Çalıştı Sade
+2023-11-09T13:34:43.694+03:00  INFO 11180 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : CommandLineRunner Çalıştı
+2023-11-09T13:34:47.392+03:00  INFO 11180 --- [SpringApplicationShutdownHook] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api After Bean bitti
+2023-11-09T13:34:47.393+03:00  INFO 11180 --- [SpringApplicationShutdownHook] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder After Bean bitti
+2023-11-09T13:34:47.394+03:00  INFO 11180 --- [SpringApplicationShutdownHook] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner Before Bean Method bitti
+2023-11-09T13:34:47.395+03:00  INFO 11180 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T13:34:47.550+03:00  INFO 11180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-11-09T13:34:47.562+03:00  INFO 11180 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-11-09T13:34:47.590+03:00  INFO 11180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-11-09T13:35:51.366+03:00  INFO 8592 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Starting VkiCalculetionApplication using Java 19 with PID 8592 (C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion\BackEnd\target\classes started by Dell in C:\Users\Dell\Desktop\kurs\proje\Yeni klasör\VkiCalculetion)
+2023-11-09T13:35:51.371+03:00  INFO 8592 --- [restartedMain] c.a.v.VkiCalculetionApplication          : The following 1 profile is active: "frontend"
+2023-11-09T13:35:51.549+03:00  INFO 8592 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-09T13:35:51.550+03:00  INFO 8592 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-09T13:35:54.546+03:00  INFO 8592 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-09T13:35:54.658+03:00  INFO 8592 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 2 JPA repository interfaces.
+2023-11-09T13:35:55.893+03:00  INFO 8592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3737 (http)
+2023-11-09T13:35:55.912+03:00  INFO 8592 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-09T13:35:55.913+03:00  INFO 8592 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-09T13:35:56.067+03:00  INFO 8592 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-09T13:35:56.068+03:00  INFO 8592 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4517 ms
+2023-11-09T13:35:56.307+03:00  INFO 8592 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-09T13:35:56.745+03:00  INFO 8592 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/blog user=SA
+2023-11-09T13:35:56.758+03:00  INFO 8592 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-09T13:35:56.777+03:00  INFO 8592 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2023-11-09T13:35:56.991+03:00 DEBUG 8592 --- [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-11-09T13:35:56.993+03:00 DEBUG 8592 --- [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2023-11-09T13:35:58.026+03:00  INFO 8592 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-09T13:36:01.176+03:00  INFO 8592 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T13:36:01.204+03:00  INFO 8592 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner After Bean Method başladı
+2023-11-09T13:36:01.209+03:00  INFO 8592 --- [restartedMain] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder Before Bean başladı
+2023-11-09T13:36:01.211+03:00  INFO 8592 --- [restartedMain] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api Before Bean başladı
+2023-11-09T13:36:03.324+03:00  WARN 8592 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-09T13:36:03.803+03:00 DEBUG 8592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-09T13:36:04.353+03:00 DEBUG 8592 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2023-11-09T13:36:08.856+03:00 DEBUG 8592 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2023-11-09T13:36:09.002+03:00 DEBUG 8592 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-09T13:36:09.601+03:00  WARN 8592 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-11-09T13:36:12.464+03:00  INFO 8592 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-09T13:36:12.488+03:00  INFO 8592 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-11-09T13:36:13.035+03:00  INFO 8592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3737 (http) with context path ''
+2023-11-09T13:36:13.103+03:00  INFO 8592 --- [restartedMain] c.a.v.VkiCalculetionApplication          : Started VkiCalculetionApplication in 22.841 seconds (process running for 25.233)
+2023-11-09T13:36:13.121+03:00  INFO 8592 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner2        : CommandLineRunner Çalıştı Sade
+2023-11-09T13:36:13.122+03:00  INFO 8592 --- [restartedMain] c.a.v.bean.BlogCommandLineRunner         : CommandLineRunner Çalıştı
+2023-11-09T13:36:31.042+03:00  INFO 8592 --- [http-nio-3737-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-09T13:36:31.045+03:00  INFO 8592 --- [http-nio-3737-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-09T13:36:31.050+03:00 DEBUG 8592 --- [http-nio-3737-exec-7] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-11-09T13:36:31.057+03:00 DEBUG 8592 --- [http-nio-3737-exec-7] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-11-09T13:36:31.062+03:00 DEBUG 8592 --- [http-nio-3737-exec-7] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-11-09T13:36:31.071+03:00 DEBUG 8592 --- [http-nio-3737-exec-7] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@484e51f
+2023-11-09T13:36:31.074+03:00 DEBUG 8592 --- [http-nio-3737-exec-7] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5f46c532
+2023-11-09T13:36:31.075+03:00 DEBUG 8592 --- [http-nio-3737-exec-7] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-09T13:36:31.076+03:00  INFO 8592 --- [http-nio-3737-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2023-11-09T13:36:31.116+03:00 DEBUG 8592 --- [http-nio-3737-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2023-11-09T13:36:31.284+03:00 DEBUG 8592 --- [http-nio-3737-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-09T13:36:31.381+03:00 DEBUG 8592 --- [http-nio-3737-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-11-09T13:36:31.382+03:00 DEBUG 8592 --- [http-nio-3737-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-11-09T13:36:31.425+03:00 DEBUG 8592 --- [http-nio-3737-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2023-11-09T13:36:31.431+03:00 DEBUG 8592 --- [http-nio-3737-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-11-09T13:36:31.771+03:00 DEBUG 8592 --- [http-nio-3737-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2023-11-09T13:36:31.789+03:00 DEBUG 8592 --- [http-nio-3737-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Nov 09 13:36:31 TRT 2023, status=404, error=Not Found, message=No message available,  (truncated)...]
+2023-11-09T13:36:32.449+03:00 DEBUG 8592 --- [http-nio-3737-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-11-09T13:37:22.402+03:00 DEBUG 8592 --- [http-nio-3737-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/list", parameters={}
+2023-11-09T13:37:22.418+03:00 DEBUG 8592 --- [http-nio-3737-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.alicetin.vkicalculetion.controller.impl.VkiApiImpl#vkiServiceList()
+2023-11-09T13:37:24.286+03:00 DEBUG 8592 --- [http-nio-3737-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-11-09T13:37:24.290+03:00 DEBUG 8592 --- [http-nio-3737-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[UserVkiDto(uName=name 1, uKilo=30, uHeight=10), UserVkiDto(uName=name 2, uKilo=87, uHeight=190), Us (truncated)...]
+2023-11-09T13:37:24.353+03:00 DEBUG 8592 --- [http-nio-3737-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-09T13:37:34.177+03:00  INFO 8592 --- [SpringApplicationShutdownHook] c.a.v.bean.SwaggerOpenApiBeanClass       : swagger Open Api After Bean bitti
+2023-11-09T13:37:34.265+03:00  INFO 8592 --- [SpringApplicationShutdownHook] c.a.v.bean.PasswordEncoderBeanClass      : password Encoder After Bean bitti
+2023-11-09T13:37:34.268+03:00  INFO 8592 --- [SpringApplicationShutdownHook] c.a.v.bean.BlogCommandLineRunner         : blog CommandLineRunner Before Bean Method bitti
+2023-11-09T13:37:34.274+03:00  INFO 8592 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T13:37:34.399+03:00  INFO 8592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-09T13:37:34.420+03:00  INFO 8592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
