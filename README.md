@@ -233,8 +233,4 @@ password: none
 ###Run BackEnd=>
 You can open and run the file with the IDE you use.
 
-<<<<<<< HEAD
 # Questions and Comments: Alimcetin37@gmail.com
-=======
-# Questions and Comments: Alimcetin37@gmail.com
->>>>>>> bc6c0206d66c24875b6d5950696dc7c577030b7f
